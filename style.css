@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #8aa5e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.darkmode {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(18, 18, 18);
+    box-shadow:inset 20px 20px 60px #0000009d, inset -20px -20px 50px #99999965;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100vw;
+    height: 70vh;
+    background-color: #adbeed;
+    border-radius: 12px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+input {
+    width: 12rem;
+    height: 1.7rem;
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    padding: 2px 5px;
+}
+
+p label {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.calc {
+    width: 7vw;
+    height: 2.1vw;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+}
+
+#result {
+    background-color: white;
+    width: 17vw;
+    height: 4vh;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    overflow-x: scroll;
+    text-wrap: nowrap;
+}
+
+#result::-webkit-scrollbar {
+    display: none;
+}
+
+#weight-guide {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 2rem;
+    align-items: center;
+}
+
+@media (max-width : 600px) {
+    .container {
+        position: relative;
+        width: 100vw;
+
+    }
+
+    #result {
+        background-color: white;
+        width: 50vw;
+        height: 4vh;
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 15px 5px 0px 5px;
+        font-weight: 600;
+        font-size: 1rem;
+        text-transform: capitalize;
+        overflow-x: scroll;
+        text-wrap: nowrap;
+    }
+
+
+    .calc {
+        width: 14vmax;
+        height: 3vmax;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        border: none;
+    }
+
+
+    #weight-guide {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 1.2rem;
+        align-items: center;
+    }
+}
