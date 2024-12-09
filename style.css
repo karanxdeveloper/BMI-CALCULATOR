@@ -141,3 +141,33 @@ p label {
         align-items: center;
     }
 }
+
+
+
+ @media (min-width: 601px) and (max-width: 1500px) {
+
+    #result {
+        background-color: white;
+        width: 21vmax;
+        height: 3.2vh;
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 15px 5px 0px 5px;
+        font-weight: 600;
+        font-size: 1rem;
+        text-transform: capitalize;
+        overflow-x: scroll;
+        text-wrap: nowrap;
+    }
+
+    .calc {
+        width: 14vmax;
+        height: 3.5vmax;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        border: none;
+        padding: 5px 8px;
+    }
+
+} 

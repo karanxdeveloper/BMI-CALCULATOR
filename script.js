@@ -7,9 +7,9 @@ form.addEventListener('submit', function(event){
     const weight = parseFloat(document.querySelector('#weight').value)
     const result = (document.querySelector('#result'));
 
-    if(height === '' || height < 0 || isNaN(height)){
+    if(height === '' || height <= 0 || isNaN(height)){
         result.innerHTML = `please enter a valid height`
-    } else if(weight === '' || weight < 0 || isNaN(weight)){
+    } else if(weight === '' || weight <= 0 || isNaN(weight)){
         result.innerHTML = `please enter a valid weight`
     } else{
         const bmi = (weight / ((height / 100) ** 2)).toFixed(2)
@@ -31,13 +31,6 @@ form.addEventListener('submit', function(event){
 const body = document.querySelector('body')
 const container = document.querySelector('.container')
 const darkmode = document.querySelector('.darkmode')
-
-
-//  darkmode.addEventListener('click', function(){
-//      body.style.backgroundColor = '#3f3f3f'
-//      container.style.backgroundColor = '#77787c'
-// })
-
 
 darkmode.addEventListener('click', function(){
     if(body.style.backgroundColor === 'rgb(63, 63, 63)'){
